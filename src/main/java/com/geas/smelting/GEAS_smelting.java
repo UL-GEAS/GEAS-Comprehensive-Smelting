@@ -31,10 +31,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(GEAS_smelting.MODID)
+@Mod(GEAS_smelting.MOD_ID)
 public class GEAS_smelting {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "geas_smelting";
+    public static final String MOD_ID = "geas_smelting";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "geas_smelting" namespace
