@@ -1,8 +1,9 @@
 package com.geas.smelting.item;
 
-import net.GEAS.testmod.TestMod;
-import net.GEAS.testmod.block.ModBlocks;
-import net.minecraft.core.Registry;
+
+
+import com.geas.smelting.GEAS_smelting;
+import com.geas.smelting.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -15,56 +16,25 @@ import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TestMod.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GEAS_smelting.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
-                    .title(Component.translatable("creativetab.testmod.bismuth_items"))
+    public static final Supplier<CreativeModeTab> SMELTING_ITEMS_TAB = CREATIVE_MODE_TAB.register("smelting_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CRUDE_IRON.get()))
+                    .title(Component.translatable("creativetab.GEAS_smelting.smelting_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                     //Put items here:
-                    output.accept(ModItems.BISMUTH);
-                    output.accept(ModItems.RAW_BISMUTH);
-                    output.accept(ModItems.CHISEL);
-                    output.accept(ModItems.TROWEL);
-                    output.accept(ModItems.RADISH);
-                    output.accept(ModItems.FROSTFIRE_ICE);
-                    output.accept(ModItems.STARLIGHT_ASHES);
+                    output.accept(ModItems.CRUDE_IRON);
 
-                    output.accept(ModItems.BISMUTH_SWORD);
-                    output.accept(ModItems.BISMUTH_PICKAXE);
-                    output.accept(ModItems.BISMUTH_SHOVEL);
-                    output.accept(ModItems.BISMUTH_AXE);
-                    output.accept(ModItems.BISMUTH_HOE);
-
-                    output.accept(ModItems.BISMUTH_HAMMER);
 
             }).build());
-    public static final Supplier<CreativeModeTab> BISMUTH_BLOCKS_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK.get()))
-                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TestMod.MOD_ID, "bismuth_items_tab"))
-                    .title(Component.translatable("creativetab.testmod.bismuth_blocks"))
+    public static final Supplier<CreativeModeTab> SMELTING_BLOCKS_TAB = CREATIVE_MODE_TAB.register("smelting_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PLACEHOLDER.get()))
+                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(GEAS_smelting.MOD_ID, "smelting_items_tab"))
+                    .title(Component.translatable("creativetab.GEAS_smelting.smelting_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                     //Put blocks here:
-                    output.accept(ModBlocks.BISMUTH_BLOCK);
-                    output.accept(ModBlocks.BISMUTH_ORE);
-                    output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                    output.accept(ModBlocks.PLACEHOLDER);
 
-                    output.accept(ModBlocks.MAGIC_BLOCK);
-
-                    output.accept(ModBlocks.BISMUTH_STAIRS);
-                    output.accept(ModBlocks.BISMUTH_SLAB);
-
-                    output.accept(ModBlocks.BISMUTH_PRESSURE_PLATE);
-                    output.accept(ModBlocks.BISMUTH_BUTTON);
-
-                    output.accept(ModBlocks.BISMUTH_FENCE);
-                    output.accept(ModBlocks.BISMUTH_FENCE_GATE);
-                    output.accept(ModBlocks.BISMUTH_WALL);
-
-                    output.accept(ModBlocks.BISMUTH_DOOR);
-                    output.accept(ModBlocks.BISMUTH_TRAPDOOR);
-
-                    output.accept(ModBlocks.BISMUTH_LAMP);
 
 
 

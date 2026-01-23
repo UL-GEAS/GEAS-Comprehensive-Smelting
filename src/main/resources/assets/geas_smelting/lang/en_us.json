@@ -1,13 +1,14 @@
 {
-  "itemGroup.geas_smelting": "Example Mod Tab",
+  "creativetab.GEAS_smelting.smelting_items_tab": "GEAS' Comprehensive Smelting: Items",
+  "creativetab.GEAS_smelting.smelting_blocks_tab": "Comprehensive Smelting: Blocks",
+
+
   "block.geas_smelting.example_block": "Example Block",
-  "item.geas_smelting.example_item": "Example Item",
+  "item.geas_smelting.crude_iron": "Crude Iron Chunk",
 
   "geas_smelting.configuration.title": "GEAS' Comprehensive Smelting Configs",
   "geas_smelting.configuration.section.geas_smelting.common.toml": "GEAS' Comprehensive Smelting Configs",
   "geas_smelting.configuration.section.geas_smelting.common.toml.title": "GEAS' Comprehensive Smelting Configs",
-  "geas_smelting.configuration.items": "Item List",
-  "geas_smelting.configuration.logDirtBlock": "Log Dirt Block",
-  "geas_smelting.configuration.magicNumberIntroduction": "Magic Number Text",
-  "geas_smelting.configuration.magicNumber": "Magic Number"
+  "geas_smelting.configuration.items": "Item List"
+
 }
