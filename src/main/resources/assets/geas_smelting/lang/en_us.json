@@ -1,0 +1,13 @@
+{
+  "itemGroup.geas_smelting": "Example Mod Tab",
+  "block.geas_smelting.example_block": "Example Block",
+  "item.geas_smelting.example_item": "Example Item",
+
+  "geas_smelting.configuration.title": "GEAS' Comprehensive Smelting Configs",
+  "geas_smelting.configuration.section.geas_smelting.common.toml": "GEAS' Comprehensive Smelting Configs",
+  "geas_smelting.configuration.section.geas_smelting.common.toml.title": "GEAS' Comprehensive Smelting Configs",
+  "geas_smelting.configuration.items": "Item List",
+  "geas_smelting.configuration.logDirtBlock": "Log Dirt Block",
+  "geas_smelting.configuration.magicNumberIntroduction": "Magic Number Text",
+  "geas_smelting.configuration.magicNumber": "Magic Number"
+}
