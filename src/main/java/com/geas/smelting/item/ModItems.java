@@ -2,13 +2,10 @@ package com.geas.smelting.item;
 
 
 import com.geas.smelting.GEAS_smelting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 //Register for all items
 public class ModItems {
