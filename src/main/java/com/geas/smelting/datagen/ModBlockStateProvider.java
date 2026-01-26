@@ -2,6 +2,7 @@ package com.geas.smelting.datagen;
 
 
 import com.geas.smelting.GEAS_smelting;
+import com.geas.smelting.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -16,7 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         //Add blocks here:
-        // blockWithItem(ModBlocks.PLACEHOLDER); format for standard block
+         blockWithItem(ModBlocks.PLACEHOLDER);
 
 
 

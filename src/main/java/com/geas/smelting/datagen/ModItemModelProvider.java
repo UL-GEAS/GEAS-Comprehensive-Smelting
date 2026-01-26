@@ -1,6 +1,7 @@
 package com.geas.smelting.datagen;
 
 import com.geas.smelting.GEAS_smelting;
+import com.geas.smelting.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -18,8 +19,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //Put items here:
-//        basicItem(ModItems.PLACHOLDER.get());
-//        Placeholder code so i dont forget how it works
+        basicItem(ModItems.CRUDE_IRON.get());
+
 //        handheldItem(ModItems.PLACHOLDER);
 
     }

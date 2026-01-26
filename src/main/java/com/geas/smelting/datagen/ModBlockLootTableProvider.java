@@ -27,7 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
     //Blocks go here:
-
+    dropSelf(ModBlocks.PLACEHOLDER.get());
     }
 
 

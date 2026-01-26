@@ -2,8 +2,10 @@ package com.geas.smelting.datagen;
 
 
 import com.geas.smelting.GEAS_smelting;
+import com.geas.smelting.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -18,14 +20,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-//        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-//                .add(ModBlocks.PLACHOLDER.get());
-//
-//        tag(BlockTags.NEEDS_IRON_TOOL)
-//                .add(ModBlocks.PLACHOLDER.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.PLACEHOLDER.get());
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.PLACEHOLDER.get());
 //
 //        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-//                .add(ModBlocks.PLACHOLDER.get());
+//                .add(ModBlocks.PLACEHOLDER.get());
 
 
 
