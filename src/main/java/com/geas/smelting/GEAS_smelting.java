@@ -1,6 +1,7 @@
 package com.geas.smelting;
 
 import com.geas.smelting.block.ModBlocks;
+import com.geas.smelting.item.ModCreativeModeTabs;
 import com.geas.smelting.item.ModItems;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import org.slf4j.Logger;
@@ -39,12 +40,10 @@ public class GEAS_smelting {
         // Register the commonSetup method for modloading
 //        modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
+
         ModBlocks.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
-        CREATIVE_MODE_TABS.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (GEASComprehensiveSmelting) to respond directly to events.

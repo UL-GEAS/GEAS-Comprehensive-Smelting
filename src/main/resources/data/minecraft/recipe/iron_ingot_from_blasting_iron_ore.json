@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.25,
-  "group": "bismuth",
+  "group": "crude_iron",
   "ingredient": {
     "item": "minecraft:iron_ore"
   },

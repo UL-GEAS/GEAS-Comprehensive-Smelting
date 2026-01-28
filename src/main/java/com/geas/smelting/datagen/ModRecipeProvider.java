@@ -3,6 +3,7 @@ package com.geas.smelting.datagen;
 
 import com.geas.smelting.GEAS_smelting;
 import com.geas.smelting.item.ModItems;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
+import javax.annotation.concurrent.Immutable;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -19,13 +21,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
-
+    List<ItemLike> CRUDE_IRON_SMELTABLES = List.of(Items.RAW_IRON, Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE);
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        List<ItemLike> CRUDE_IRON_SMELTABLES = List.of(Items.RAW_IRON, Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE);
-        oreSmelting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
-        oreBlasting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "bismuth");
 
+        oreSmelting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
+        oreBlasting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
+
+//        SimpleCookingRecipeBuilder.smelting(Ingredient.of((ItemLike) CRUDE_IRON_SMELTABLES), RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200);//.save((RecipeOutput) Items.IRON_INGOT);
 
     }
 
