@@ -21,14 +21,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
-    List<ItemLike> CRUDE_IRON_SMELTABLES = List.of(Items.RAW_IRON, Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE);
+
+
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
-        oreSmelting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
-        oreBlasting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
 
-//        SimpleCookingRecipeBuilder.smelting(Ingredient.of((ItemLike) CRUDE_IRON_SMELTABLES), RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200);//.save((RecipeOutput) Items.IRON_INGOT);
+        //just incase
+//        List<ItemLike> CRUDE_IRON_SMELTABLES = List.of(Items.RAW_IRON, Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE);
+//        oreSmelting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
+//        oreBlasting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
+
 
     }
 

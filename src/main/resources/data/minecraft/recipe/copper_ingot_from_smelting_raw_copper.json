@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 0,
+  "experience": 0.0,
+  "group": "copper_ingot_override",
+  "ingredient": {
+    "item": "minecraft:air"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:air"
+  }
+}
