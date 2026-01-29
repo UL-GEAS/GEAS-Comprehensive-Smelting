@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "geas_smelting:block/tier_1_foundry"
+    }
+  }
+}

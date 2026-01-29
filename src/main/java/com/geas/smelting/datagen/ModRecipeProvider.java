@@ -2,6 +2,7 @@ package com.geas.smelting.datagen;
 
 
 import com.geas.smelting.GEAS_smelting;
+import com.geas.smelting.block.ModBlocks;
 import com.geas.smelting.item.ModItems;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.core.HolderLookup;
@@ -12,6 +13,7 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.concurrent.Immutable;
 import java.util.List;
@@ -24,13 +26,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
     @Override
-    protected void buildRecipes(RecipeOutput recipeOutput) {
+    protected void buildRecipes( RecipeOutput recipeOutput) {
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TIER_1_FOUNDRY.get())
+                .pattern("ISI")
+                .pattern("SCS")
+                .pattern("ISI")
+                .define('I', ModItems.CRUDE_IRON.get())
+                .define('S', Items.COBBLESTONE)
+                .define('C', Items.COAL)
+                .unlockedBy("has_crude_iron", has(ModItems.CRUDE_IRON)).save(recipeOutput);
 
 
-        //just incase
-//        List<ItemLike> CRUDE_IRON_SMELTABLES = List.of(Items.RAW_IRON, Blocks.IRON_ORE, Blocks.DEEPSLATE_IRON_ORE);
-//        oreSmelting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
-//        oreBlasting(recipeOutput, CRUDE_IRON_SMELTABLES, RecipeCategory.MISC, ModItems.CRUDE_IRON.get(), 0.25f, 200, "crude_iron");
+
 
 
     }

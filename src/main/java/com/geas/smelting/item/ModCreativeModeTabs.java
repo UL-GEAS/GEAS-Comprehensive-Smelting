@@ -28,12 +28,12 @@ public class ModCreativeModeTabs {
 
             }).build());
     public static final Supplier<CreativeModeTab> SMELTING_BLOCKS_TAB = CREATIVE_MODE_TAB.register("smelting_blocks_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PLACEHOLDER.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.TIER_1_FOUNDRY.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(GEAS_smelting.MOD_ID, "smelting_items_tab"))
                     .title(Component.translatable("creativetab.GEAS_smelting.smelting_blocks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                     //Put blocks here:
-                    output.accept(ModBlocks.PLACEHOLDER);
+                    output.accept(ModBlocks.TIER_1_FOUNDRY);
 
 
 

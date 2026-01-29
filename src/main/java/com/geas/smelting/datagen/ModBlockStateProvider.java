@@ -17,7 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         //Add blocks here:
-         blockWithItem(ModBlocks.PLACEHOLDER);
+         blockWithItem(ModBlocks.TIER_1_FOUNDRY);
 
 
 

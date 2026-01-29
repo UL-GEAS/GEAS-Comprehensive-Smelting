@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-27T19:19:37.4862682	Block States: geas_smelting
-8496e598517e2655ce4df28be9f105adf5d0c0c6 assets/geas_smelting/blockstates/placeholder.json
-bb72d069604899dd89dfeb2aeabb5853a083e578 assets/geas_smelting/models/block/placeholder.json
-7f337acf1a8a784363994b76a768d2221638468b assets/geas_smelting/models/item/placeholder.json
+// 1.21.1	2026-01-28T01:49:16.4561061	Block States: geas_smelting
+ebf48a31d328c1d388c3fedcc5b626781be70886 assets/geas_smelting/blockstates/tier_1_foundry.json
+00206dc7a1978cf0070a6a504bab6f2c5a3d4dc8 assets/geas_smelting/models/block/tier_1_foundry.json
+bf4eded919084ead1aebc8183fd5b8a743ac5516 assets/geas_smelting/models/item/tier_1_foundry.json

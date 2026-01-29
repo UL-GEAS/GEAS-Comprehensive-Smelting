@@ -1,9 +1,9 @@
 {
   "creativetab.GEAS_smelting.smelting_items_tab": "GEAS' Comprehensive Smelting: Items",
-  "creativetab.GEAS_smelting.smelting_blocks_tab": "Comprehensive Smelting: Blocks",
+  "creativetab.GEAS_smelting.smelting_blocks_tab": "GEAS' Comprehensive Smelting: Blocks",
 
 
-  "block.geas_smelting.example_block": "Example Block",
+  "block.geas_smelting.tier_1_foundry": "Basic Foundry",
   "item.geas_smelting.crude_iron": "Crude Iron Chunk",
 
   "geas_smelting.configuration.title": "GEAS' Comprehensive Smelting Configs",

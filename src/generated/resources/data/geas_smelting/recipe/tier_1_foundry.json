@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "I": {
+      "item": "geas_smelting:crude_iron"
+    },
+    "S": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "SCS",
+    "ISI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "geas_smelting:tier_1_foundry"
+  }
+}

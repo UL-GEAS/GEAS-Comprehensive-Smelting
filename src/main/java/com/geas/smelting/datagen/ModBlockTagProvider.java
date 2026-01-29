@@ -21,10 +21,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.PLACEHOLDER.get());
+                .add(ModBlocks.TIER_1_FOUNDRY.get());
 
-        tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.PLACEHOLDER.get());
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.TIER_1_FOUNDRY.get());
 //
 //        tag(BlockTags.NEEDS_DIAMOND_TOOL)
 //                .add(ModBlocks.PLACEHOLDER.get());

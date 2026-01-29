@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "geas_smelting:placeholder"
+          "name": "geas_smelting:tier_1_foundry"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "geas_smelting:blocks/placeholder"
+  "random_sequence": "geas_smelting:blocks/tier_1_foundry"
 }

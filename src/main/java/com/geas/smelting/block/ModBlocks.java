@@ -18,7 +18,7 @@ public class ModBlocks {
             DeferredRegister.createBlocks(GEAS_smelting.MOD_ID);
 
     //Full blocks
-    public static final DeferredBlock<Block> PLACEHOLDER = registerBlock("placeholder",
+    public static final DeferredBlock<Block> TIER_1_FOUNDRY = registerBlock("tier_1_foundry",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops()));
 
