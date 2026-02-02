@@ -15,6 +15,13 @@ public class ModItems {
 
     public static final DeferredItem<Item> CRUDE_IRON = ITEMS.register("crude_iron",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIER_1_IRON_POOR = ITEMS.register("tier_1_iron_poor",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIER_1_IRON_MEDIUM = ITEMS.register("tier_1_iron_medium",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIER_1_IRON_PURE = ITEMS.register("tier_1_iron_pure",
+            () -> new Item(new Item.Properties()));
+
 
 
 

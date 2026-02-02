@@ -1,2 +1,5 @@
-// 1.21.1	2026-01-27T19:19:37.4792621	Item Models: geas_smelting
+// 1.21.1	2026-01-29T14:14:51.124861362	Item Models: geas_smelting
 d3bc8c549dcbb11629fc5eef7c9b7394b7abb4a6 assets/geas_smelting/models/item/crude_iron.json
+cbd3e5edf23fe81785b19a0ada1942ff7540f4e6 assets/geas_smelting/models/item/tier_1_iron_medium.json
+d96614e63b0d0b6f658294b79c03100b750bf1c9 assets/geas_smelting/models/item/tier_1_iron_poor.json
+8515eb8c4662e9765fd359cabf9bcc090a32e6db assets/geas_smelting/models/item/tier_1_iron_pure.json
