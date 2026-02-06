@@ -4,18 +4,14 @@ package com.geas.smelting.datagen;
 import com.geas.smelting.GEAS_smelting;
 import com.geas.smelting.block.ModBlocks;
 import com.geas.smelting.item.ModItems;
-import com.google.common.collect.ImmutableList;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
-import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
@@ -37,7 +33,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Items.COAL)
                 .unlockedBy("has_crude_iron", has(ModItems.CRUDE_IRON)).save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 1)
+                .requires(ModItems.TIER_1_IRON_POOR)
+                .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_POOR)).save(recipeOutput, "iron_ingot_from_poor_bloom");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 2)
+                .requires(ModItems.TIER_1_IRON_MEDIUM)
+                .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_MEDIUM)).save(recipeOutput, "iron_ingot_from_medium_bloom");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT,3)
+                .requires(ModItems.TIER_1_IRON_PURE)
+                .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_PURE)).save(recipeOutput, "iron_ingot_from_pure_bloom");
 
 
 

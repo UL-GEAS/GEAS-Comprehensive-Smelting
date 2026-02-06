@@ -25,6 +25,9 @@ public class ModCreativeModeTabs {
                     //Put items here:
                     output.accept(ModItems.CRUDE_IRON);
 
+                    output.accept(ModItems.TIER_1_IRON_POOR);
+                    output.accept(ModItems.TIER_1_IRON_MEDIUM);
+                    output.accept(ModItems.TIER_1_IRON_PURE);
 
             }).build());
     public static final Supplier<CreativeModeTab> SMELTING_BLOCKS_TAB = CREATIVE_MODE_TAB.register("smelting_blocks_tab",

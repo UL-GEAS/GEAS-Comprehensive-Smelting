@@ -1,3 +1,9 @@
-// 1.21.1	2026-01-28T02:05:04.1167382	Recipes
+// 1.21.1	2026-02-06T10:21:35.203423561	Recipes
 5c383cb9e55b7c7988da4534846f632855b93268 data/geas_smelting/advancement/recipes/misc/tier_1_foundry.json
 7a5e18887ebd466862eacaf335ca9191acd10494 data/geas_smelting/recipe/tier_1_foundry.json
+380dde83df65310e10af8e780bc8a0a0b313bf38 data/minecraft/advancement/recipes/misc/iron_ingot_from_medium_bloom.json
+bb76033d2edfdd7582369175cd7c334b38c8160d data/minecraft/advancement/recipes/misc/iron_ingot_from_poor_bloom.json
+5e531827083ff503388597d0cd96d559661d2c1f data/minecraft/advancement/recipes/misc/iron_ingot_from_pure_bloom.json
+993a7b9152a9f27fe131796e5ebe19b6648495e1 data/minecraft/recipe/iron_ingot_from_medium_bloom.json
+567b1cb64baad4632bdebeb3db3dca979f74551f data/minecraft/recipe/iron_ingot_from_poor_bloom.json
+75fda86a3a34c662743f38ed2ee3590d2f623baa data/minecraft/recipe/iron_ingot_from_pure_bloom.json
