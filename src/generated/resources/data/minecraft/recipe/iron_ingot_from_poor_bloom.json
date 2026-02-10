@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "bloom_refining",
   "ingredients": [
     {
       "item": "geas_smelting:tier_1_iron_poor"
