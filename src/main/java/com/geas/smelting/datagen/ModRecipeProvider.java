@@ -35,14 +35,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 1)
                 .requires(ModItems.TIER_1_IRON_POOR)
+                .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_POOR)).save(recipeOutput, "iron_ingot_from_poor_bloom");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 2)
                 .requires(ModItems.TIER_1_IRON_MEDIUM)
+                .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_MEDIUM)).save(recipeOutput, "iron_ingot_from_medium_bloom");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT,3)
                 .requires(ModItems.TIER_1_IRON_PURE)
+                .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_PURE)).save(recipeOutput, "iron_ingot_from_pure_bloom");
 
 
