@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "geas_smelting:item/tier_1_iron_pure"
-  }
-}

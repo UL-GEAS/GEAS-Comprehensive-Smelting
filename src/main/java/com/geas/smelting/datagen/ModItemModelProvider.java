@@ -20,9 +20,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //Put items here:
         basicItem(ModItems.CRUDE_IRON.get());
-        basicItem(ModItems.TIER_1_IRON_POOR.get());
-        basicItem(ModItems.TIER_1_IRON_MEDIUM.get());
-        basicItem(ModItems.TIER_1_IRON_PURE.get());
+//        basicItem(ModItems.TIER_1_IRON_POOR.get());
+//        basicItem(ModItems.TIER_1_IRON_MEDIUM.get());
+//        basicItem(ModItems.TIER_1_IRON_PURE.get());
 
 
 //        handheldItem(ModItems.PLACHOLDER);
