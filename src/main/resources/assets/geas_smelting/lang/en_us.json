@@ -7,9 +7,12 @@
 
   "item.geas_smelting.crude_iron": "Crude Iron Chunk",
 
-  "item.geas_smelting.tier_1_iron_poor": "Iron Bloom (Dirty)",
-  "item.geas_smelting.tier_1_iron_medium": "Iron Bloom (Average)",
+  "item.geas_smelting.tier_1_iron_poor": "Iron Bloom (Filthy)",
+  "item.geas_smelting.tier_1_iron_medium": "Iron Bloom (Dirty)",
   "item.geas_smelting.tier_1_iron_pure": "Iron Bloom (Clean)",
+  "item.geas_smelting.tier_1_iron_chunk": "Wrought Iron Chunk",
+  "item.geas_smelting.tier_1_iron": "Wrought Iron Ingot",
+
 
   "geas_smelting.configuration.title": "GEAS' Comprehensive Smelting Configs",
   "geas_smelting.configuration.section.geas_smelting.common.toml": "GEAS' Comprehensive Smelting Configs",

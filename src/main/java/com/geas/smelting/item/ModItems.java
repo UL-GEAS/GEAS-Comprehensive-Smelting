@@ -23,6 +23,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIER_1_IRON_CHUNK = ITEMS.register("tier_1_iron_chunk",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIER_1_IRON = ITEMS.register("tier_1_iron",
+            () -> new Item(new Item.Properties()));
 
 
 

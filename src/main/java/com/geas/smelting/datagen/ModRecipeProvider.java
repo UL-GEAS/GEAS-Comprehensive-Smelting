@@ -33,20 +33,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', Items.COAL)
                 .unlockedBy("has_crude_iron", has(ModItems.CRUDE_IRON)).save(recipeOutput);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 1)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIER_1_IRON_CHUNK, 1)
                 .requires(ModItems.TIER_1_IRON_POOR)
                 .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_POOR)).save(recipeOutput, "iron_ingot_from_poor_bloom");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT, 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIER_1_IRON_CHUNK, 2)
                 .requires(ModItems.TIER_1_IRON_MEDIUM)
                 .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_MEDIUM)).save(recipeOutput, "iron_ingot_from_medium_bloom");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.IRON_INGOT,3)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIER_1_IRON_CHUNK,3)
                 .requires(ModItems.TIER_1_IRON_PURE)
                 .group("bloom_refining")
                 .unlockedBy("has_bloom", has(ModItems.TIER_1_IRON_PURE)).save(recipeOutput, "iron_ingot_from_pure_bloom");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TIER_1_IRON,1)
+                .requires(ModItems.TIER_1_IRON_CHUNK)
+                .requires(ModItems.TIER_1_IRON_CHUNK)
+                .requires(ModItems.TIER_1_IRON_CHUNK)
+                .group("wrought_ingot")
+                .unlockedBy("has_wrought_chunk", has(ModItems.TIER_1_IRON_CHUNK)).save(recipeOutput, "wrought_ingot_from_chunk");
 
 
 

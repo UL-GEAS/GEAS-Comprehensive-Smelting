@@ -23,6 +23,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 //        basicItem(ModItems.TIER_1_IRON_POOR.get());
 //        basicItem(ModItems.TIER_1_IRON_MEDIUM.get());
 //        basicItem(ModItems.TIER_1_IRON_PURE.get());
+        basicItem(ModItems.TIER_1_IRON_CHUNK.get());
+        basicItem(ModItems.TIER_1_IRON.get());
 
 
 //        handheldItem(ModItems.PLACHOLDER);
