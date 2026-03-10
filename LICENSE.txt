@@ -1,5 +1,5 @@
         GEAS CREDIT GIVEN COPYLEFT LICENSE
-            Version 1, 10 March 2026
+            Version 2, 10 March 2026
 
 Copyright (C) 2026 Unknown Lifeform - GEAS
  Everyone is permitted to copy and distribute verbatim copies
@@ -227,6 +227,16 @@ apply only to part of the Program, that part may be used separately
 under those permissions, but the entire Program remains governed by
 this License without regard to the additional permissions.
 
+As a special exception, the copyright holders of this program give you permission to link this
+program with independent modules to produce an executable,
+regardless of the license terms of these independent modules,
+and to copy and distribute the resulting executable under terms of your choice,
+provided that you also meet, for each linked independent module,
+the terms and conditions of the license of that module. An independent
+module is a module which is not derived from or based on this program. If you
+modify this program, you may extend this exception to your version of the program,
+but you are not obliged to do so. If you do not wish to do so, delete this exception statement from your version.
+
   When you convey a copy of a covered work, you may at your option
 remove any additional permissions from that copy, or from any part of
 it.  (Additional permissions may be written to require their own
@@ -366,10 +376,9 @@ address new problems or concerns.
 Program specifies that a certain numbered version of the GEAS Credit Given Copyleft License
  "or any later version" applies to it, you have the
 option of following the terms and conditions either of that numbered
-version or of any later version published by the Free Software
-Foundation.  If the Program does not specify a version number of the
+version or of any later version published by GEAS.  If the Program does not specify a version number of the
 GEAS Credit Given Copyleft License, you may choose any version ever published
-by the Free Software Foundation.
+by the GEAS.
 
   If the Program specifies that a proxy can decide which future
 versions of the GEAS Credit Given Copyleft License can be used, that proxy's
